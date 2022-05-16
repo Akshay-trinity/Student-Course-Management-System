@@ -1,0 +1,788 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/account/login": {
+      "post": {
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/account_login_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n\r\n    \"email\":\"akshay.trinitytecholutions@gmail.com\",\r\n    \"password\":\"admin123\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/course/show": {
+      "get": {
+        "description": "MY APIS",
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/student/login": {
+      "post": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/student_login_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n   \r\n            \"email\": \"rajivvviisshhwwaa@gmail.com\",\r\n            \"password\": \"akshay123\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/course/update": {
+      "patch": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/course_update_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"_id\": \"627f8688ae76eb71278b6c82\",\r\n    \"title\":\"course of science\"\r\n    \r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/student/update": {
+      "patch": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/student_update_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n   \r\n         \r\n    \"_id\":\"62824dc5a2981f6bdfbd60eb\",\r\n    \"address\":\"akshay/trinity\"\r\n\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/delete/627fbe304a1daa8dff86b3dc": {
+      "delete": {
+        "description": "MY APIS",
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/studentCourse/delete/62825411f6886be7d098cce5": {
+      "delete": {
+        "description": "MY APIS",
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/student/show": {
+      "post": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/student_show_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"courseId\":\"627f8688ae76eb71278b6c82\",\r\n    \"studentId\":\"62824dc5a2981f6bdfbd60eb\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "404": {
+            "description": "MY APIS",
+            "content": {
+              "text/html; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/studentCourse/show": {
+      "get": {
+        "description": "MY APIS",
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/student/delete": {
+      "delete": {
+        "description": "MY APIS",
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/studentCourse/register": {
+      "post": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/studentCourse_register_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"courseId\":\"627f8688ae76eb71278b6c82\",\r\n    \"studentId\":\"62824dc5a2981f6bdfbd60eb\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "MY APIS",
+            "content": {
+              "text/html; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/studentCourse/update": {
+      "patch": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/studentCourse_update_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"_id\":\"627fbbb94a1daa8dff86b3be\",\r\n    \"courseId\":\"62825198338131cebf1d044b\",\r\n    \"studentId\":\"62824dc5a2981f6bdfbd60eb\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/course/delete/62824bc5cc42780682c7b4a2": {
+      "delete": {
+        "description": "MY APIS",
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/student/register": {
+      "post": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/student_register_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"firstName\":\"akshay\",\r\n            \"lastName\":\"sharma\",\r\n            \"address\":\"indore\",\r\n            \"email\": \"rajivvviisshhwwaa@gmail.com\",\r\n            \"password\": \"akshay123\",\r\n            \"phoneNumber\":\"8871654634\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/update": {
+      "patch": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/account_update_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n\r\n    \"_id\":\"628247b74459614eefd99b99\",\r\n    \"name\":\"admin\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/register": {
+      "post": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/account_register_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"name\":\"admin\",\r\n    \"email\":\"akshay.trinitytecholutions@gmail.com\",\r\n    \"password\":\"admin123\"\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    },
+    "/api/account/course/register": {
+      "post": {
+        "description": "MY APIS",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/course_register_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"title\": \"biology_course\",\r\n    \"status\": true\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "MY APIS",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:3000"
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {
+      "account_login_body": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "student_login_body": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "course_update_body": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        }
+      },
+      "student_update_body": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        }
+      },
+      "student_show_body": {
+        "type": "object",
+        "properties": {
+          "studentId": {
+            "type": "string"
+          },
+          "courseId": {
+            "type": "string"
+          }
+        }
+      },
+      "studentCourse_register_body": {
+        "type": "object",
+        "properties": {
+          "studentId": {
+            "type": "string"
+          },
+          "courseId": {
+            "type": "string"
+          }
+        }
+      },
+      "studentCourse_update_body": {
+        "type": "object",
+        "properties": {
+          "studentId": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          },
+          "courseId": {
+            "type": "string"
+          }
+        }
+      },
+      "student_register_body": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "account_update_body": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        }
+      },
+      "account_register_body": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "course_register_body": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "status": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
