@@ -3,7 +3,7 @@
 student-course-management-system
 
 firstly clone the code from git hub
-this is the git url for cloning - ()
+this is the git url for cloning - (https://github.com/Akshay-trinity/Student-Course-Management-System.git)
 
 Note : use npm package installer
 ---
@@ -60,6 +60,8 @@ please go through this url
 
 i also added postman-collection json file as well
 the name of that file is - student-course-management.postman_collection
+
+i did'n hide env file . env file having my credentials
 
 Thankyou!
 
