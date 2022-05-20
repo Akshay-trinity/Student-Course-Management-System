@@ -158,9 +158,13 @@ const changePassword = async (req, res) => {
 const deleteStudent = async (req, res, next) => {
     try {
 
-        await Student.findByIdAndDelete({ _id: req.body._id })
-
-        return res.json("user deleted successfully")
+       const data =  await Student.findByIdAndDelete(req.params.id)
+       if(data){
+        return res.status(200).json("user deleted successfully")
+        }
+        else{
+            return res.status(404).json("no data is available")
+        }
     }
     catch (err) {
         console.log("error", err);

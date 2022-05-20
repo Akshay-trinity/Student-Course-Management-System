@@ -91,8 +91,15 @@ const login = async (req, res, next) => {
 }
 const deleteUser = async (req, res, next) => {
     try {
-            await Admin.findByIdAndDelete(req.params.id)
+        
+          const data =   await Admin.findByIdAndDelete(req.params.id)
+            if(data){
             return res.status(200).json("user deleted successfully")
+            }
+            else{
+                return res.status(404).json("no data is available")
+            }
+            
     }
     catch (err) {
         console.log("error", err);

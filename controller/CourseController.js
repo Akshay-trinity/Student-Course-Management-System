@@ -76,9 +76,14 @@ const deleteCourse = async (req, res, next) => {
     try {
 
 
-        await Course.findByIdAndDelete(req.params.id)
+       const data =  await Course.findByIdAndDelete(req.params.id)
      
-        return res.json("deleted successfully")
+       if(data){
+        return res.status(200).json("user deleted successfully")
+        }
+        else{
+            return res.status(404).json("no data is available")
+        }
     }
     catch (err) {
         console.log("error", err);

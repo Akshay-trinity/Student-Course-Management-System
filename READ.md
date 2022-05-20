@@ -63,6 +63,8 @@ the name of that file is - student-course-management.postman_collection
 
 i did'n hide env file . env file having my credentials
 
+i also used my testing gmail id credentials , you can find it in student controller file
+
 Thankyou!
 
 
